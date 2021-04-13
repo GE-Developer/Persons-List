@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE2130BF26261EBE008D09B4 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2130BE26261EBE008D09B4 /* PersonDetailsViewController.swift */; };
+		EE2130C226262793008D09B4 /* FullPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2130C126262793008D09B4 /* FullPersonsListViewController.swift */; };
+		EE2130C6262629B3008D09B4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2130C5262629B3008D09B4 /* TabBarController.swift */; };
 		EECF2B0726250FB200B547FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF2B0626250FB200B547FF /* AppDelegate.swift */; };
 		EECF2B0926250FB200B547FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF2B0826250FB200B547FF /* SceneDelegate.swift */; };
-		EECF2B0B26250FB200B547FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF2B0A26250FB200B547FF /* ViewController.swift */; };
 		EECF2B0E26250FB200B547FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECF2B0C26250FB200B547FF /* Main.storyboard */; };
 		EECF2B1026250FB700B547FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECF2B0F26250FB700B547FF /* Assets.xcassets */; };
 		EECF2B1326250FB700B547FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECF2B1126250FB700B547FF /* LaunchScreen.storyboard */; };
+		EECF2B1E26250FE600B547FF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF2B1D26250FE600B547FF /* DataManager.swift */; };
+		EECF2B29262510C400B547FF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF2B28262510C400B547FF /* Person.swift */; };
+		EEEDA3E62625CDAF004C34BC /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDA3E52625CDAF004C34BC /* PersonsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE2130BE26261EBE008D09B4 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		EE2130C126262793008D09B4 /* FullPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPersonsListViewController.swift; sourceTree = "<group>"; };
+		EE2130C5262629B3008D09B4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EECF2B0326250FB200B547FF /* Persons List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECF2B0626250FB200B547FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECF2B0826250FB200B547FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EECF2B0A26250FB200B547FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EECF2B0D26250FB200B547FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EECF2B0F26250FB700B547FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EECF2B1226250FB700B547FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EECF2B1426250FB700B547FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECF2B1D26250FE600B547FF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EECF2B28262510C400B547FF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EEEDA3E52625CDAF004C34BC /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		EECF2B0526250FB200B547FF /* Persons List */ = {
 			isa = PBXGroup;
 			children = (
-				EECF2B0626250FB200B547FF /* AppDelegate.swift */,
-				EECF2B0826250FB200B547FF /* SceneDelegate.swift */,
-				EECF2B0A26250FB200B547FF /* ViewController.swift */,
-				EECF2B0C26250FB200B547FF /* Main.storyboard */,
-				EECF2B0F26250FB700B547FF /* Assets.xcassets */,
-				EECF2B1126250FB700B547FF /* LaunchScreen.storyboard */,
-				EECF2B1426250FB700B547FF /* Info.plist */,
+				EECF2B27262510AC00B547FF /* Models */,
+				EECF2B1C26250FC800B547FF /* Services */,
+				EECF2B222625106300B547FF /* Supports */,
+				EECF2B242625108700B547FF /* View Controllers */,
+				EECF2B212625102A00B547FF /* Storyboards */,
+				EECF2B202625100100B547FF /* Resources */,
 			);
 			path = "Persons List";
+			sourceTree = "<group>";
+		};
+		EECF2B1C26250FC800B547FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EECF2B1D26250FE600B547FF /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EECF2B202625100100B547FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EECF2B0F26250FB700B547FF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EECF2B212625102A00B547FF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EECF2B0C26250FB200B547FF /* Main.storyboard */,
+				EECF2B1126250FB700B547FF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EECF2B222625106300B547FF /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EECF2B0626250FB200B547FF /* AppDelegate.swift */,
+				EECF2B0826250FB200B547FF /* SceneDelegate.swift */,
+				EECF2B1426250FB700B547FF /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		EECF2B242625108700B547FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEEDA3E52625CDAF004C34BC /* PersonsListViewController.swift */,
+				EE2130BE26261EBE008D09B4 /* PersonDetailsViewController.swift */,
+				EE2130C126262793008D09B4 /* FullPersonsListViewController.swift */,
+				EE2130C5262629B3008D09B4 /* TabBarController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EECF2B27262510AC00B547FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EECF2B28262510C400B547FF /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EECF2B0B26250FB200B547FF /* ViewController.swift in Sources */,
+				EE2130C226262793008D09B4 /* FullPersonsListViewController.swift in Sources */,
+				EE2130C6262629B3008D09B4 /* TabBarController.swift in Sources */,
+				EECF2B29262510C400B547FF /* Person.swift in Sources */,
+				EEEDA3E62625CDAF004C34BC /* PersonsListViewController.swift in Sources */,
+				EE2130BF26261EBE008D09B4 /* PersonDetailsViewController.swift in Sources */,
+				EECF2B1E26250FE600B547FF /* DataManager.swift in Sources */,
 				EECF2B0726250FB200B547FF /* AppDelegate.swift in Sources */,
 				EECF2B0926250FB200B547FF /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Persons List/Info.plist";
+				INFOPLIST_FILE = "Persons List/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Persons-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Persons List/Info.plist";
+				INFOPLIST_FILE = "Persons List/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Persons-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
