@@ -8,45 +8,22 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
     private let persons = DataManager().getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let viewcontrollers = self.viewControllers else { return }
+        
+        for viewController in viewcontrollers {
+            if let personsListVC = viewController as? PersonsListViewController {
+                personsListVC.persons = persons
+            } else if let fullPersonsVC = viewController as? FullPersonsListViewController {
+                fullPersonsVC.persons = persons
+            } 
+        }
+        
     }
     
-    
-    
-    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let tabBarController = segue.destination as? UITabBarController else { return }
-//        guard let viewControllers = tabBarController.viewControllers else { return }
-//        
-//        for viewControler in viewControllers {
-//            if let naviController = viewControler as? UINavigationController {
-//                if let a = naviController as? PersonsListViewController {
-//                    a.persons = persons
-//                } else if let b = naviController as? FullPersonsListViewController {
-//                    b.persons = persons
-//                }
-//            }
-//        }
-//        
-//        
-//        
-//        
-//        
-//        
-//        
-//        
-//        
-//    }
-    
 }
-
-
-
-
-
-
-
